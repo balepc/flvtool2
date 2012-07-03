@@ -9,7 +9,10 @@ Gem::Specification.new do |s|
 
   s.rubyforge_project = "flvtool2"
 
-  s.files = Dir.glob('**/*')
-  s.executables = Dir.glob('bin/*').collect {|f| File.basename(f)}
-  s.require_paths << 'lib'
+  ignore_patterns = %w[**/*.gem **/*.pid **/*.log pkg Gemfile.lock]
+  ignore_files    = ignore_patterns.inject([]) {|a,p| a + Dir[p] }
+  s.files         = Dir["**/*"] - ignore_files
+  s.test_files    = Dir.glob("{spec,features}/**/*.{rb,yml,feature}")
+  s.executables   = 'flvtool2'
+  s.require_paths = ["lib"]
 end

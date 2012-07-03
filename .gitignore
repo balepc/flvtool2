@@ -1,7 +1,9 @@
-pkg
-<<<<<<< HEAD
-.idea/
-=======
-InstalledFiles
-.config
->>>>>>> caa9917d0f0283a490729b7277cc10eb7a2655e7
+pkg/*
+*.gem
+.bundle
+*.log
+*.pid
+tmp/*
+vendor
+tags
+./idea
