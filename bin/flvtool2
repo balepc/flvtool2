@@ -1,0 +1,4 @@
+#! /usr/bin/env ruby
+require 'flvtool2'
+FLVTool2::flvtool2
+

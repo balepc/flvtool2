@@ -1,0 +1,14 @@
+PATH
+  remote: .
+  specs:
+    flvtool2 (1.0.7)
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  flvtool2!
